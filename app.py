@@ -8,6 +8,9 @@ def homepage(age):
         return render_template("home.html",title="home")
     else:
         return "<h1>hello all welocme to the page</h1>"
+@app.route("/forms")
+def formsroute():
+    return render_template("forms.html",title="forms")    
 
 
 if __name__=="__main__":
